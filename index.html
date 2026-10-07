@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Avanzada de Funciones</title>
+    <!-- Google Fonts para una mejor estética -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Práctica de Funciones</h1>
+            <p>Basado en el apunte de Matemática</p>
+            <div class="tabs">
+                <button id="btn-theory" class="tab-btn active">Teoría</button>
+                <button id="btn-practice" class="tab-btn">Práctica (Ejercicios)</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN DE TEORÍA -->
+        <section id="theory-section" class="tab-content active">
+            <div class="theory-card">
+                <h2>Concepto de Función</h2>
+                <p>Una gráfica es un conjunto de puntos (x; y) del plano, o sea, relaciona valores de <strong>x</strong> con valores de <strong>y</strong>. Cuando en una gráfica <strong>todos</strong> los valores de <strong>x</strong> de algún intervalo real están relacionados con un <strong>único</strong> valor de <strong>y</strong>, esa relación es una <strong>función</strong>.</p>
+                <ul>
+                    <li><strong>y</strong> es la imagen de <strong>x</strong></li>
+                    <li><strong>x</strong> es la preimagen de <strong>y</strong></li>
+                </ul>
+            </div>
+
+            <div class="theory-card">
+                <h2>Dominio e Imagen</h2>
+                <p>El <strong>dominio</strong> de una función es el intervalo real de los valores de <strong>x</strong> que intervienen en la función y la <strong>imagen</strong> es el intervalo de los valores de <strong>y</strong> que son resultado de la función.</p>
+            </div>
+
+            <div class="theory-card">
+                <h2>Ceros, Positividad y Negatividad</h2>
+                <ul>
+                    <li><strong>Ceros o raíces:</strong> Son los valores de x para los cuales la función vale cero: f(x) = 0. (Gráficamente, donde corta al eje x).</li>
+                    <li><strong>Conjunto de positividad (C<sup>+</sup>):</strong> Son los intervalos de x para los cuales la función es positiva: f(x) > 0. (Gráficamente, por encima del eje x).</li>
+                    <li><strong>Conjunto de negatividad (C<sup>-</sup>):</strong> Son los intervalos de x para los cuales la función es negativa: f(x) < 0. (Gráficamente, por debajo del eje x).</li>
+                </ul>
+            </div>
+
+            <div class="theory-card">
+                <h2>Crecimiento y Decrecimiento</h2>
+                <p>Una función es:</p>
+                <ul>
+                    <li><strong>Creciente</strong> cuando, al aumentar los valores de x, la función aumenta.</li>
+                    <li><strong>Decreciente</strong> cuando, al aumentar los valores de x, la función disminuye.</li>
+                    <li><strong>Constante</strong> cuando, al aumentar los valores de x, la función no varía.</li>
+                </ul>
+                <p>Los puntos donde la función pasa de ser creciente a decreciente se denominan <strong>máximos relativos</strong>, y de decreciente a creciente <strong>mínimos relativos</strong>.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE PRÁCTICA -->
+        <section id="practice-section" class="tab-content">
+            <div class="controls">
+                <button id="btn-renew" class="action-btn">Renovar Ejercicios</button>
+                <button id="btn-submit" class="action-btn primary">Corregir Todo</button>
+            </div>
+            
+            <div id="score-container" class="hidden">
+                <div class="score-circle">
+                    <span id="score-text"></span>
+                </div>
+                <p>¡Corrección completada!</p>
+            </div>
+
+            <div id="exercises-container">
+                <!-- Los ejercicios se inyectarán aquí vía JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
